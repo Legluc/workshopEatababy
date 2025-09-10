@@ -3,6 +3,7 @@ require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.ph
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
 
+
 ?>
 <section class="hero">
     <div class="box">Hello GSAP 👋</div>
