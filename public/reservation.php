@@ -11,23 +11,23 @@ require_once __DIR__ . '/../includes/header.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réservation</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
         <h1>Réservation</h1>
 
-        <form action="" method="POST"></form>
+        <form action="" method="POST">
             <div class="form-section">
                 <h2>Informations personnelles</h2>
                 
                 <div class="form-group">
-                    <label for="nom">Nom</label>
+                    <label for="nom_client">Nom</label>
                     <input type="text" id="nom_client" name="nom_client" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="date">Date</label>
+                    <label for="date_reservation">Date</label>
                     <input type="date" id="date_reservation" name="date_reservation" required>
                 </div>
 
@@ -59,6 +59,9 @@ require_once __DIR__ . '/../includes/header.php';
 
 <?php
 
+require_once __DIR__ . '/../includes/footer.php';
+
+
 function ajouterReservation($bdd) {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -84,7 +87,7 @@ function ajouterReservation($bdd) {
                 ':nombre_personnes' => $nombre_personnes
             ]);
 
-            echo "Réservation enregistrée avec succès !";
+            echo "<div class='message-success'>Réservation enregistrée avec succès !</div>";
         } catch (PDOException $e) {
             echo "Erreur : " . $e->getMessage();
         }
