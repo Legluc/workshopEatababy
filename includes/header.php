@@ -11,6 +11,12 @@
 
 <body>
   <header class="site-header">
-    <h1>Mon Projet</h1>
+    <img class="logo" src="/public/assets/img/logo.png" alt="Logo du site">
+    <ul class="liste-entete">
+      <li><a href="/" class="typo-menu">Accueil</a></li>
+      <li><a href="/" class="typo-menu">Menu</a></li>
+      <li><a href="/" class="typo-menu">Actualités</a></li>
+      <li><a href="/" class="typo-menu">Réservation</a></li>
+    </ul>
   </header>
   <main class="site-main">
