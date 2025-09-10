@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 48;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 40;
+  font-size: 40px;
 }
 
 .typo-menu {
@@ -86,7 +86,7 @@ h2 {
 }
 
 footer {
-  height: 95%;
+  height: 70%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -112,7 +112,10 @@ footer {
 }
 
 .footer-left {
+  flex-direction: row;
   justify-content: space-between;
+  align-items: end;
+  width: 40%;
 }
 
 .footer-center {

@@ -2,7 +2,7 @@
 @use '../variables' as *;
 
 footer{
-    height: 95%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -26,7 +26,10 @@ footer{
 }
 
 .footer-left{
+    flex-direction: row;
     justify-content: space-between;
+    align-items: end;
+    width: 40%;
 }
 
 .footer-center{
