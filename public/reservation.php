@@ -49,7 +49,7 @@ require_once __DIR__ . '/../includes/header.php';
             </div>
             
             <div class="form-group">
-                <input type="submit" value="Créer mon compte">
+                <input type="submit" value="réserver">
             </div>
         </form>
 
