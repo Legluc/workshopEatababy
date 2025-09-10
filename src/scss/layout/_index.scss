@@ -1,0 +1,29 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+.accueil-section-1, .accueil-section-2, .accueil-section-3{
+    @include flex-center;
+    padding: $space100;
+    flex-direction: column;
+    gap: $space60;
+    width: 100%;
+}
+
+.accueil-section-1 h1, .accueil-section-2 h2, .accueil-section-3 h2{
+    width: 100%;
+}
+
+.section-2-body, .section-3-body{
+    display: flex;
+    justify-content: space-between;
+    gap: $space60;
+}
+
+.accueil-section-1 img{
+    border-radius: $radius20;
+}
+
+.section-2-body img, .section-3-body img{
+    border-radius: $radius20;
+    width: 45%;
+}

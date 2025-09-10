@@ -24,7 +24,7 @@
             <a href="/public/index.php" class="typo-menu">Actualité</a>
           </li>
           <li>
-            <a href="/public/index.php" class="typo-menu">Reservation</a>
+            <a href="/public/reservation.php" class="typo-menu">Reservation</a>
           </li>
         </ul>
       </nav>
