@@ -2,7 +2,7 @@
 @use '../variables' as *;
 
 footer{
-    height: 85%;
+    height: 95%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -18,7 +18,7 @@ footer{
 }
 
 .footer-left img{
-    width: 150px;
+    width: 250px;
 }
 
 .footer-right, .footer-center, .footer-info{
@@ -47,7 +47,11 @@ footer{
 }
 
 .footer-reseau svg{
-    width: 50px;
+    width: 80px;
+}
+
+.footer-reseau .logo-linkedin{
+    width: 120px;
 }
 
 #noeud-footer{
