@@ -29,8 +29,8 @@
         </ul>
       </nav>
     </div>
-    <img src="/public/assets/img/noeud-papillon-3d.png" alt="noeud papillon">
     <div class="footer-right">
+      <img id="noeud-footer" src="/public/assets/img/noeud-papillon-3d.png" alt="noeud papillon">
       <img src="/public/assets/img/qrcode.png" alt="QR code">
       <div class="footer-reseau">
         <a href="https://youtu.be/xvFZjo5PgG0?si=-TvdxhDuuCV47kRD">
