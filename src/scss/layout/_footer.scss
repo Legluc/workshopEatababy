@@ -1,0 +1,47 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: $space100;
+}
+
+.footer-left, .footer-center, .footer-right, .footer-info{
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    gap: $space20;
+    height: 100%;
+}
+
+.footer-left img{
+    width: 150px;
+}
+
+.footer-right, .footer-center, .footer-info{
+    justify-content: flex-end;
+}
+
+.footer-left{
+    justify-content: space-between;
+}
+
+.footer-center{
+    text-align: start;
+}
+
+.footer-right img{
+    width: 150px;
+}
+
+.footer-reseau{
+    @include flex-center;
+    gap: $space20;
+}
+
+.footer-reseau svg{
+    width: 50px;
+}

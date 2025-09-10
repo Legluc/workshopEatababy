@@ -78,9 +78,60 @@ h2 {
 .typo-menu {
   font-size: 36px;
   font-weight: 500;
+  color: #FF708D;
+  font-family: "Gluten", cursive;
 }
 .typo-menu:hover {
   color: #31D068;
+}
+
+footer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px;
+}
+
+.footer-left, .footer-center, .footer-right, .footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.footer-left img {
+  width: 150px;
+}
+
+.footer-right, .footer-center, .footer-info {
+  justify-content: flex-end;
+}
+
+.footer-left {
+  justify-content: space-between;
+}
+
+.footer-center {
+  text-align: start;
+}
+
+.footer-right img {
+  width: 150px;
+}
+
+.footer-reseau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-reseau svg {
+  width: 50px;
 }
 
 body {
