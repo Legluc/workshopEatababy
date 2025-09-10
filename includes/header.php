@@ -16,7 +16,7 @@
       <li><a href="/" class="typo-menu">Accueil</a></li>
       <li><a href="/" class="typo-menu">Menu</a></li>
       <li><a href="/" class="typo-menu">Actualités</a></li>
-      <li><a href="/" class="typo-menu">Réservation</a></li>
+      <li><a href="/public/reservation.php" class="typo-menu">Réservation</a></li>
     </ul>
   </header>
   <main class="site-main">
