@@ -3,6 +3,7 @@ require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.ph
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
 ?>
+
 <section class="accueil-section-1">
     <h1>Bienvenue chez Eatababy</h1>
     <p>Situé au cœur d’un univers où la gastronomie rencontre l’enfance, Eatababy est un restaurant pas comme les autres. Ici, chaque plat est préparé et présenté pour mettre en avant nos mascottes adorables : les bébés.

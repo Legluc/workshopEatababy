@@ -1,0 +1,14 @@
+.liste-entete {
+ display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 2rem;                
+  list-style: none;         
+  margin: 0;                
+  padding: 0;   
+  
+}
+.logo {
+    max-width: 150px;
+    max-height: 150px;
+  }
