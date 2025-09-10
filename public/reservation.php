@@ -48,7 +48,7 @@ require_once __DIR__ . '/../includes/header.php';
                 
             </div>
             
-            <div class="form-group" style="text-align: center; margin-top: 30px;">
+            <div class="form-group">
                 <input type="submit" value="Créer mon compte">
             </div>
         </form>
@@ -56,3 +56,48 @@ require_once __DIR__ . '/../includes/header.php';
     </div>
 </body>
 </html>
+
+<?php
+
+function ajouterReservation($bdd) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+        $nom_client       = htmlspecialchars($_POST['nom_client']);
+        $date_reservation = $_POST['date_reservation'];
+        $heure            = $_POST['heure'];
+        $telephone        = $_POST['telephone'];
+        $nombre_personnes = (int) $_POST['nombre_personnes'];
+
+        try {
+            
+            $sql = "INSERT INTO reservation (nom_client, date_reservation, heure, telephone, nombre_personnes) 
+                    VALUES (:nom_client, :date_reservation, :heure, :telephone, :nombre_personnes)";
+
+            $stmt = $bdd->prepare($sql);
+
+            
+            $stmt->execute([
+                ':nom_client'       => $nom_client,
+                ':date_reservation' => $date_reservation,
+                ':heure'            => $heure,
+                ':telephone'        => $telephone,
+                ':nombre_personnes' => $nombre_personnes
+            ]);
+
+            echo "Réservation enregistrée avec succès !";
+        } catch (PDOException $e) {
+            echo "Erreur : " . $e->getMessage();
+        }
+    }
+}
+// Connexion à la base de données
+try {
+    $bdd = new PDO("mysql:host=localhost;dbname=schema;charset=utf8", "root", "");
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    ajouterReservation($bdd);
+} catch (PDOException $e) {
+    die("Connexion échouée : " . $e->getMessage());
+}
+?>
+
