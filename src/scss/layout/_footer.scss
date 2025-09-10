@@ -7,6 +7,7 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     padding: $space100 $space200;
+    position: relative;
 }
 
 .footer-left, .footer-center, .footer-right, .footer-info{
@@ -37,11 +38,11 @@ footer{
 }
 
 .footer-right{
-    position: relative;
+    gap: unset;
 }
 
 .footer-right img{
-    width: 80%;
+    width: 70%;
 }
 
 .footer-reseau{
@@ -63,4 +64,5 @@ footer{
     top: 0;
     right: 0;
     rotate: (15deg);
+    transform: translate(-65%, -10%);
 }
