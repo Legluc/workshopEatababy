@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mon projet GSAP + PHP</title>
   <link rel="stylesheet" href="/public/assets/css/style.css">
+
 </head>
 
 <body>
@@ -20,4 +21,5 @@
 
     </ul>
   </header>
+  
   <main class="site-main"> 

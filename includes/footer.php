@@ -47,6 +47,8 @@
   </footer>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script defer src="/assets/js/app.js"></script>
+  <script src="/public/assets/js/menuDynamic.js"></script>
+
   </body>
 
   </html>
