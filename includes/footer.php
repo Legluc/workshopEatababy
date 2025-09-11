@@ -18,13 +18,13 @@
             <a href="/public/index.php" class="typo-menu">Accueil</a>
           </li>
           <li>
-            <a href="/public/index.php" class="typo-menu">Menu</a>
+            <a href="/includes/menuDynamic.php" class="typo-menu">Menu</a>
           </li>
           <li>
-            <a href="/public/index.php" class="typo-menu">Actualité</a>
+            <a href="/includes/actualite.php" class="typo-menu">Actualité</a>
           </li>
           <li>
-            <a href="/public/reservation.php" class="typo-menu">Reservation</a>
+            <a href="/includes/reservation.php" class="typo-menu">Reservation</a>
           </li>
         </ul>
       </nav>

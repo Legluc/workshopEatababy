@@ -7,11 +7,14 @@
 @use "base/typography";
 
 // Layout
-@use "layout/header";
-@use "layout/footer";
-@use "layout/main";
-@use "layout/index";
+
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/main';
+@use 'layout/index';
+@use 'layout/menuDynamic';
 @use "layout/reservation";
+
 
 // Composants
 @use "components/buttons";

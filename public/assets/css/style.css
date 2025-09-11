@@ -59,17 +59,12 @@ body {
   color: #140004;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Gluten", cursive;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
-  color: #ff708d;
+  color: #FF708D;
 }
 
 h1 {
@@ -83,11 +78,11 @@ h2 {
 .typo-menu {
   font-size: 36px;
   font-weight: 500;
-  color: #ff708d;
+  color: #FF708D;
   font-family: "Gluten", cursive;
 }
 .typo-menu:hover {
-  color: #31d068;
+  color: #31D068;
 }
 
 .liste-entete {
@@ -134,10 +129,7 @@ footer {
   position: relative;
 }
 
-.footer-left,
-.footer-center,
-.footer-right,
-.footer-info {
+.footer-left, .footer-center, .footer-right, .footer-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,9 +143,7 @@ footer {
   width: 250px;
 }
 
-.footer-right,
-.footer-center,
-.footer-info {
+.footer-right, .footer-center, .footer-info {
   justify-content: flex-end;
 }
 
@@ -201,7 +191,7 @@ footer {
 }
 
 body {
-  background-color: #fef8d7;
+  background-color: #FEF8D7;
 }
 
 .accueil-section-1,
@@ -279,71 +269,75 @@ body {
   box-shadow: 0 2px 10px rgba(20, 0, 4, 0.05);
 }
 
-.form-section h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
+.section-menu-dynamic {
+  padding: 100px;
+  margin-top: 165px;
 }
 
-.form-group {
+.menu-dynamic {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.menu-choix, .menu-realisation, .entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 3px 4px 4px 4px rgba(20, 0, 4, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.menu-realisation {
+  padding: 100px;
+}
+
+.menu-choix {
   flex-direction: column;
-  margin-bottom: 20px;
+  width: auto;
+  gap: 60px;
+  padding: 60px;
 }
 
-.form-group label {
-  font-family: "Gluten", cursive;
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #ff708d;
-  font-weight: 500;
+.menu-entete-choix {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.form-group input {
-  padding: 12px 16px;
-  border: 2px solid #ff708d;
-  border-radius: 12px;
-  font-family: "Noto Sans", sans-serif;
-  background-color: #fff;
-  transition: all 0.3s ease;
+.entete-choix {
+  width: auto;
+  margin-right: auto;
 }
 
-.form-group input:focus {
-  outline: none;
-  border-color: #31d068;
-  box-shadow: 0 0 0 3px rgba(49, 208, 104, 0.2);
-}
 
-.form-group input[type="submit"] {
-  background: #ff708d;
-  color: white;
-  font-family: "Gluten", cursive;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  padding: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.form-group input[type="submit"]:hover {
-  background: #31d068;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(49, 208, 104, 0.3);
-}
-
+.menu-bebe-choix, 
+.menu-accompagnement-choix,
 .accueil-section-1,
 .accueil-section-2,
 .accueil-section-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
-  flex-direction: column;
-  gap: 60px;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 40px;
 }
+
+
+.entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+  padding: 20px;
+}
+
+.entete-choix, .bebe-choix, .accompagnement-choix {
+  background-color: #E6E6FA;
 
 .accueil-section-1 h1,
 .accueil-section-2 h2,
@@ -356,12 +350,34 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 60px;
+
 }
 
-.accueil-section-1 img {
-  border-radius: 20px;
+.entete-choix:hover, .bebe-choix:hover, .accompagnement-choix:hover, .menu-validation:hover {
+  background-color: #31D068;
+  cursor: pointer;
 }
 
+
+.bebe-choix, .accompagnement-choix {
+  width: auto;
+}
+
+.bebe-choix img, .accompagnement-choix img {
+  width: 100px;
+}
+
+.menu-validation {
+  background-color: #FFB7C5;
+  width: auto;
+  border: unset;
+}
+
+.entete-choix, .menu-validation {
+  font-family: "Gluten", cursive;
+  font-weight: 500;
+ }
+  
 .section-2-body img,
 .section-3-body img {
   border-radius: 20px;
