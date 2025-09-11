@@ -17,6 +17,7 @@
       <li><a href="/includes/menuDynamic.php" class="typo-menu">Menu</a></li>
       <li><a href="/includes/actualite.php" class="typo-menu">Actualités</a></li>
       <li><a href="/includes/reservation.php" class="typo-menu">Réservation</a></li>
+
     </ul>
   </header>
-  <main class="site-main">
+  <main class="site-main"> 
