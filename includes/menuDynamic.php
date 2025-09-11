@@ -7,8 +7,8 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="section-menu-dynamic">
     <div>
         <h1>Nos menus</h1>
-        <p>Chez Mini-Chef World, nous avons imaginé une carte qui s’adapte à toutes les envies.
-            D’un côté, découvrez nos menus traditionnels, soigneusement élaborés par nos Mini-Chefs, où chaque plat signature incarne la culture et le savoir-faire d’un pays. Ces menus complets sont parfaits pour ceux qui veulent se laisser guider et vivre une expérience clé en main. <br> De l’autre, laissez libre cours à votre imagination avec notre formule “Compose ton menu” : choisissez d’abord votre Mini-Chef préféré (italien, japonais, mexicain, américain… et bien d’autres à venir), puis associez-le à l’accompagnement de votre choix.
+        <p>Chez Eatababy, nous avons imaginé une carte qui s’adapte à toutes les envies.
+            D’un côté, découvrez nos menus traditionnels, soigneusement élaborés par nos Chefs, où chaque bébé incarne la culture et le savoir-faire d’un pays. Ces menus complets sont parfaits pour ceux qui veulent se laisser guider et vivre une expérience clé en main. <br><br> De l’autre, laissez libre cours à votre imagination avec notre formule “Compose ton bébé" : choisissez d’abord votre bébé préféré (italien, japonais, mexicain, américain… et bien d’autres à venir), puis associez-le à l’accompagnement de votre choix.
         </p>
     </div>
     <div class="menu-dynamic">

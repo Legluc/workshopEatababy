@@ -51,6 +51,7 @@
 }
 
 .menu-bebe-choix, .menu-accompagnement-choix{
+    display: none;
     @include flex-center;
     flex-wrap: wrap;
     gap: $space40;
@@ -86,4 +87,12 @@
 .entete-choix, .menu-validation{
     font-family: $font-secondary;
     font-weight: 500;
+}
+
+.menu-actif{
+    display: flex;
+}
+
+.choix-actif{
+    background-color: $green;
 }
