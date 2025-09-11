@@ -59,12 +59,17 @@ body {
   color: #140004;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Gluten", cursive;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
-  color: #FF708D;
+  color: #ff708d;
 }
 
 h1 {
@@ -78,11 +83,11 @@ h2 {
 .typo-menu {
   font-size: 36px;
   font-weight: 500;
-  color: #FF708D;
+  color: #ff708d;
   font-family: "Gluten", cursive;
 }
 .typo-menu:hover {
-  color: #31D068;
+  color: #31d068;
 }
 
 .liste-entete {
@@ -129,7 +134,10 @@ footer {
   position: relative;
 }
 
-.footer-left, .footer-center, .footer-right, .footer-info {
+.footer-left,
+.footer-center,
+.footer-right,
+.footer-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +151,9 @@ footer {
   width: 250px;
 }
 
-.footer-right, .footer-center, .footer-info {
+.footer-right,
+.footer-center,
+.footer-info {
   justify-content: flex-end;
 }
 
@@ -191,7 +201,7 @@ footer {
 }
 
 body {
-  background-color: #FEF8D7;
+  background-color: #fef8d7;
 }
 
 .accueil-section-1,
@@ -284,7 +294,12 @@ body {
   margin-top: 100px;
 }
 
-.menu-choix, .menu-realisation, .entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+.menu-choix,
+.menu-realisation,
+.entete-choix,
+.bebe-choix,
+.accompagnement-choix,
+.menu-validation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,8 +333,7 @@ body {
   margin-right: auto;
 }
 
-
-.menu-bebe-choix, 
+.menu-bebe-choix,
 .menu-accompagnement-choix,
 .accueil-section-1,
 .accueil-section-2,
@@ -331,14 +345,18 @@ body {
   gap: 40px;
 }
 
-
-.entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+.entete-choix,
+.bebe-choix,
+.accompagnement-choix,
+.menu-validation {
   padding: 20px;
 }
 
-.entete-choix, .bebe-choix, .accompagnement-choix {
-  background-color: #E6E6FA;
-
+.entete-choix,
+.bebe-choix,
+.accompagnement-choix {
+  background-color: #e6e6fa;
+}
 .accueil-section-1 h1,
 .accueil-section-2 h2,
 .accueil-section-3 h2 {
@@ -350,34 +368,38 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 60px;
-
 }
 
-.entete-choix:hover, .bebe-choix:hover, .accompagnement-choix:hover, .menu-validation:hover {
-  background-color: #31D068;
+.entete-choix:hover,
+.bebe-choix:hover,
+.accompagnement-choix:hover,
+.menu-validation:hover {
+  background-color: #31d068;
   cursor: pointer;
 }
 
-
-.bebe-choix, .accompagnement-choix {
+.bebe-choix,
+.accompagnement-choix {
   width: auto;
 }
 
-.bebe-choix img, .accompagnement-choix img {
+.bebe-choix img,
+.accompagnement-choix img {
   width: 100px;
 }
 
 .menu-validation {
-  background-color: #FFB7C5;
+  background-color: #ffb7c5;
   width: auto;
   border: unset;
 }
 
-.entete-choix, .menu-validation {
+.entete-choix,
+.menu-validation {
   font-family: "Gluten", cursive;
   font-weight: 500;
- }
-  
+}
+
 .section-2-body img,
 .section-3-body img {
   border-radius: 20px;
