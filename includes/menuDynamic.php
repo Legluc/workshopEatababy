@@ -14,37 +14,65 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="menu-dynamic">
         <div class="menu-choix">
             <div class="menu-entete-choix">
-                <div class="entete-choix">
+                <div id="menu-bebe" class="entete-choix">
                     <p>Les bébés</p>
                 </div>
-                <div class="entete-choix">
+                <div id="menu-accompagnement" class="entete-choix">
                     <p>Les accompagnements</p>
                 </div>
             </div>
-            <div class="menu-bebe-choix">
-                <div class="bebe-choix">
+            <div  class="menu-bebe-choix">
+                <div id="tete-bebe-blanc" class="bebe-choix">
                     <img src="/public/assets/img/tete-bebe-blanc.png" alt="bébé caucasien">
                 </div>
-                <div class="bebe-choix">
+                <div id="tete-bebe-japonaise" class="bebe-choix">
                     <img src="/public/assets/img/tete-bebe-japonaise.png" alt="bébé japonaise">
                 </div>
-                <div class="bebe-choix">
-                    <img src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
+                <div id="tete-bebe-italienne" class="bebe-choix">
+                    <img  src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
                 </div>
-                <div class="bebe-choix">
-                    <img src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
-                </div>                    
+                <div id="tete-bebe-mexicain" class="bebe-choix">
+                    <img  src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
+                </div>
+                <div id="tete-bebe-antillaise" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-italienne.png" alt="bébé antillaise">
+                </div>
+                <div id="tete-bebe-bresilien" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé brésilien">
+                </div>                  
             </div>
             <div class="menu-accompagnement-choix">
-                <div class="accompagnement-choix">
-                    <img src="" alt="">
+                <div id="bourguignon" class="accompagnement-choix">
+                    <img src="" alt="bourguignon">
                 </div>
-                <div class="accompagnement-choix">
-                    <img src="" alt="">
+
+                <div id="risotto" class="accompagnement-choix">
+                    <img src="" alt="risotto">
                 </div>
-                <div class="accompagnement-choix">
-                    <img src="" alt="">
-                </div>            
+
+                <div id="farofa" class="accompagnement-choix">
+                    <img src="" alt="farofa">
+                </div>
+
+                <div id="riz" class="accompagnement-choix">
+                    <img src="" alt="riz">
+                </div>
+
+                <div id="chili" class="accompagnement-choix">
+                    <img src="" alt="chili">
+                </div>
+
+                <div id="legume" class="accompagnement-choix">
+                    <img src="" alt="legume">
+                </div>
+
+                <div id="salade" class="accompagnement-choix">
+                    <img src="" alt="salade">
+                </div>
+
+                <div id="pates" class="accompagnement-choix">
+                    <img src="" alt="pates">
+                </div>
             </div>
             <button class="menu-validation">valider la commande</button>
         </div>

@@ -51,8 +51,8 @@
 }
 
 .menu-bebe-choix, .menu-accompagnement-choix{
-    display: none;
     @include flex-center;
+    display: none;
     flex-wrap: wrap;
     gap: $space40;
 }
