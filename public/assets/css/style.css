@@ -117,6 +117,7 @@ h2 {
 
 header {
   width: 100%;
+  z-index: 10;
 }
 
 footer {
@@ -215,6 +216,169 @@ body {
 
 .accueil-section-1 img {
   border-radius: 20px;
+=======
+}
+
+.accueil-section-1, .accueil-section-2, .accueil-section-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+
+.accueil-section-1 h1, .accueil-section-2 h2, .accueil-section-3 h2 {
+  width: 100%;
+}
+
+.section-2-body, .section-3-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.accueil-section-1 {
+  margin-top: 165px;
+}
+
+.accueil-section-1 img {
+  border-radius: 20px;
+}
+
+.section-2-body img, .section-3-body img {
+  border-radius: 20px;
+  width: 45%;
+}
+
+.section-menu-dynamic {
+  padding: 100px;
+  margin-top: 165px;
+}
+
+.menu-dynamic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+.menu-choix, .menu-realisation, .entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 3px 4px 4px 4px rgba(20, 0, 4, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.menu-realisation {
+  padding: 100px;
+}
+
+.menu-choix {
+  flex-direction: column;
+  width: auto;
+  gap: 60px;
+  padding: 60px;
+}
+
+.menu-entete-choix {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.entete-choix {
+  width: auto;
+  margin-right: auto;
+}
+
+.menu-bebe-choix, .menu-accompagnement-choix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.entete-choix, .bebe-choix, .accompagnement-choix, .menu-validation {
+  padding: 20px;
+}
+
+.entete-choix, .bebe-choix, .accompagnement-choix {
+  background-color: #E6E6FA;
+}
+
+.entete-choix:hover, .bebe-choix:hover, .accompagnement-choix:hover, .menu-validation:hover {
+  background-color: #31D068;
+  cursor: pointer;
+}
+
+.bebe-choix, .accompagnement-choix {
+  width: auto;
+}
+
+.bebe-choix img, .accompagnement-choix img {
+  width: 100px;
+}
+
+.menu-validation {
+  background-color: #FFB7C5;
+  width: auto;
+  border: unset;
+}
+
+.entete-choix, .menu-validation {
+  font-family: "Gluten", cursive;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(255, 112, 141, 0.2);
+  padding: 32px 40px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 220px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-color: #31d068;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.container h1 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-section {
+  background-color: #fef8d7;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(20, 0, 4, 0.05);
 }
 
 .section-2-body img, .section-3-body img {
@@ -254,6 +418,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .item {
   display: grid;
   grid-template-columns: 150px 1fr 80px;
@@ -274,8 +439,35 @@ body {
   margin: 2px 0 0 0;
   font-size: 14px;
   color: #333;
+}
+.form-group input[type=submit] {
+  background: #ff708d;
+  color: white;
+  font-family: "Gluten", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group input[type=submit]:hover {
+  background: #31d068;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(49, 208, 104, 0.3);
+}
+
+.accueil-section-1,
+.accueil-section-2,
+.accueil-section-3 {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 
 .item-price {
   font-weight: bold;
@@ -286,6 +478,18 @@ body {
 
 .hr-boisson {
   margin-bottom: 10px;
+ }
+.accueil-section-1 h1,
+.accueil-section-2 h2,
+.accueil-section-3 h2 {
+  width: 100%;
+}
+
+.section-2-body,
+.section-3-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 .boisson {
@@ -309,6 +513,12 @@ body {
   height: auto;
   z-index: 2;
   rotate: 45deg;
+  }
+  
+.section-2-body img,
+.section-3-body img {
+  border-radius: 20px;
+  width: 45%;
 }
 
 /*# sourceMappingURL=style.css.map */
