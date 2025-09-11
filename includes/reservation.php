@@ -2,12 +2,8 @@
 require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.php -> config.php
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
-
 ?>
-<!DOCTYPE html>
 
-<html lang="fr">
-<body>
     <div class="container">
         <h1>Réservation</h1>
 
@@ -48,8 +44,7 @@ require_once __DIR__ . '/../includes/header.php';
         </form>
 
     </div>
-</body>
-</html>
+
 
 <?php
 

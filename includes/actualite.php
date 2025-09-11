@@ -5,25 +5,29 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="accueil-section-1">
-    <h1>Bienvenue chez Eatababy</h1>
-    <p>Situé au cœur d’un univers où la gastronomie rencontre l’enfance, Eatababy est un restaurant pas comme les autres. Ici, chaque plat est préparé et présenté pour mettre en avant nos mascottes adorables : les bébés.
-    Ces petits plats, inspirés des cuisines du monde entier, vous emmènent dans un véritable voyage culinaire. Que ce soit la délicatesse d’un ramen fumant, la générosité d’une pasta italienne, ou encore le piquant ensoleillé des tacos mexicain, chaque assiette raconte l’histoire d’un pays à travers le gout d’un bébé.
-    Notre promesse : une expérience à la fois gourmande et ludique, où l’on ne vient pas seulement manger, mais aussi partager un moment hors du temps, entre rires, découvertes et émerveillement.</p>
-    <img src="/public/assets/img/devanture.png" alt="devanture Eatababy">
+    <h1>Découvrer nos baby actualités</h1>
+    <p>Chez Eatababy, il se passe toujours quelque chose ! Qu’il s’agisse de soirées thématiques, de collaborations inédites avec de nouveaux producteurs venus d’ailleurs, ou encore de nos ateliers participatifs pour petits et grands gourmands, nous aimons faire vivre notre univers au-delà de l’assiette.
+        <br> Cette page est votre rendez-vous privilégié pour suivre nos dernières actualités, découvrir nos événements à venir et ne rien manquer des surprises que nos Chefs mijotent pour vous.
+    </p>
 </section>
 
-<section class="accueil-section-2">
-    <h2>Un restaurant pas comme les autres</h2>
-    <div class="section-2-body">
-        <p>L’aventure Eatababy est née de l’amitié entre trois passionnés de cuisine et de design.Réunis autour d’une même envie – casser les codes traditionnels de la restauration – ils ont imaginé un lieu capable de marier deux univers : la gastronomie internationale et des bébés. <br>Leur idée fondatrice : donner vie à de petits personnages, les bébés, chacun porteur d’une culture, d’une recette et d’une personnalité unique.Plutôt qu’un simple repas, ils voulaient offrir un spectacle culinaire où les assiettes deviennent des scènes, et les plats des histoires. <br>Après de longs mois de travail, le concept a pris forme : un restaurant où chaque service est une immersion, où chaque bébé devient votre guide dans son pays d’origine. <br>Aujourd’hui, Eatababy est reconnu comme une expérience unique, saluée autant pour sa créativité que pour la qualité de ses plats. Plus qu’un restaurant, c’est une invitation à voyager, à sourire et à redécouvrir la cuisine mondiale sous un nouveau regard.</p>
-        <img src="/public/assets/img/les-cuisines.png" alt="cuisine Eatababy">
+<section class="accueil-section-3">
+    <h2>En ce moment</h2>
+    <div class="section-3-body">
+        <img src="/public/assets/img/nos-engagements.png" alt="la ferme en collaboration avec Eatababy">
+        <p>Chez Eatababy, nous aimons surprendre vos papilles… mais aussi votre porte-monnaie. 
+            <br> Pendant une durée limitée, profitez de notre offre spéciale sur le Menu Baby Burger : pour le prix d’un menu moyen, repartez avec un burger gourmand accompagné d’une grande frite croustillante et d’une grande boisson rafraîchissante.
+        <br> <br> C’est l’occasion rêvée de découvrir ou redécouvrir l’un de nos plats phares, auour de notre bébé Américain . Le pain moelleux, les ingrédients de qualité issus de producteurs locaux et la touche ludique qui fait notre identité rendent ce burger unique en son genre.
+    <br> <br> Attention, l’offre est disponible uniquement en restaurant et pour une période limitée. Ne manquez pas cette occasion de vous faire plaisir… en grand !</p>
     </div>
 </section>
 <section class="accueil-section-3">
-    <h2>Un restaurant pas comme les autres</h2>
+    <h2>Soirée Mexicaine</h2>
     <div class="section-3-body">
-        <img src="/public/assets/img/nos-engagements.png" alt="la ferme en collaboration avec Eatababy">
-        <p>L’aventure Eatababy est née de l’amitié entre trois passionnés de cuisine et de design.Réunis autour d’une même envie – casser les codes traditionnels de la restauration – ils ont imaginé un lieu capable de marier deux univers : la gastronomie internationale et des bébés. <br>Leur idée fondatrice : donner vie à de petits personnages, les bébés, chacun porteur d’une culture, d’une recette et d’une personnalité unique.Plutôt qu’un simple repas, ils voulaient offrir un spectacle culinaire où les assiettes deviennent des scènes, et les plats des histoires. <br>Après de longs mois de travail, le concept a pris forme : un restaurant où chaque service est une immersion, où chaque bébé devient votre guide dans son pays d’origine. <br>Aujourd’hui, Eatababy est reconnu comme une expérience unique, saluée autant pour sa créativité que pour la qualité de ses plats. Plus qu’un restaurant, c’est une invitation à voyager, à sourire et à redécouvrir la cuisine mondiale sous un nouveau regard.</p>
+        <img src="/public/assets/img/soire-mexicaine.png" alt="soirée mexicaine Eatababy">
+        <p>Le vendredi dernier, Eatababy a pris des allures de fiesta colorée lors de notre grande Soirée Mexicaine. Enivré par nos incontournable bébés Mexicain, moustache bien brossée et sombrero fièrement vissé sur la tête, nos convives ont voyagé au cœur du Mexique sans quitter leur assiette. 
+            <br> <br> Au menu : guacamole maison relevé juste comme il faut, tacos garnis de légumes bio locaux, et une sélection spéciale de boissons fruitées pour accompagner les bébés mexicain. La salle, décorée de guirlandes piñata et d’illustrations colorées, a résonné toute la soirée au son des mariachis et des rires partagés.
+        <br> <br>  Un immense merci à tous ceux qui ont participé à cette soirée mémorable ! Vos sourires et votre enthousiasme ont fait de cet événement un moment unique de convivialité et de partage, fidèle à l’esprit de notre restaurant. Restez connectés : d’autres voyages gourmands avec nos bébés vous attendent très bientôt…</p>
     </div>
 </section>
 
