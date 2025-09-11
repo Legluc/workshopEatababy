@@ -1,4 +1,3 @@
-﻿-- sql
 
 DROP DATABASE IF EXISTS Eatababy;
 CREATE DATABASE Eatababy;
