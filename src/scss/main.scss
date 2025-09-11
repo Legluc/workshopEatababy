@@ -1,18 +1,17 @@
 ﻿// Variables et outils
-@use 'variables';
-@use 'mixins';
+@use "variables";
+@use "mixins";
 
 // Base
-@use 'base/reset';
-@use 'base/typography';
+@use "base/reset";
+@use "base/typography";
 
 // Layout
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/main';
-@use 'layout/index';
-
-
+@use "layout/header";
+@use "layout/footer";
+@use "layout/main";
+@use "layout/index";
+@use "layout/reservation";
 
 // Composants
-@use 'components/buttons';
+@use "components/buttons";
