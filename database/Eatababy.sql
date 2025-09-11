@@ -1,5 +1,6 @@
 ﻿
 DROP DATABASE IF EXISTS Eatababy;
+
 CREATE DATABASE Eatababy;
 use Eatababy;
 
@@ -26,23 +27,24 @@ CREATE TABLE tables_restaurant (
 CREATE TABLE ingredients (
     id_ingredient INT AUTO_INCREMENT PRIMARY KEY,
     nom_ingredient VARCHAR(100) NOT NULL,
-    image VARCHAR(255) NOT NULL
+    image_ingredients VARCHAR(255) NOT NULL
 );
 
 -- Table des plats personnalisés (un plat correspond à une commande)
-CREATE TABLE plats (
-    id_plat INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE bebe (
+    id_bebe INT AUTO_INCREMENT PRIMARY KEY,
     id_table INT NOT NULL,
-    date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    nom_bebe VARCHAR(50) NOT NULL,
+    image_bebe VARCHAR(255) NOT NULL,
     FOREIGN KEY (id_table) REFERENCES tables_restaurant(id_table)
 );
 
 -- Table intermédiaire pour lier les plats aux ingrédients choisis
-CREATE TABLE plat_ingredients (
-    id_plat INT NOT NULL,
+CREATE TABLE bebe_ingredients (
+    id_bebe INT NOT NULL,
     id_ingredient INT NOT NULL,
-    PRIMARY KEY (id_plat, id_ingredient),
-    FOREIGN KEY (id_plat) REFERENCES plats(id_plat) ON DELETE CASCADE,
+    PRIMARY KEY (id_bebe, id_ingredient),
+    FOREIGN KEY (id_bebe) REFERENCES bebe(id_bebe) ON DELETE CASCADE,
     FOREIGN KEY (id_ingredient) REFERENCES ingredients(id_ingredient)
 );
 
