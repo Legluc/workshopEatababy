@@ -26,7 +26,7 @@ CREATE TABLE tables_restaurant (
 CREATE TABLE ingredients (
     id_ingredient INT AUTO_INCREMENT PRIMARY KEY,
     nom_ingredient VARCHAR(100) NOT NULL,
-    categorie VARCHAR(50), 
+    image VARCHAR(255) NOT NULL
 );
 
 -- Table des plats personnalisés (un plat correspond à une commande)
