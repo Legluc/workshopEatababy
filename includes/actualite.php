@@ -14,7 +14,7 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="accueil-section-3">
     <h2>En ce moment</h2>
     <div class="section-3-body">
-        <img src="/public/assets/img/nos-engagements.png" alt="la ferme en collaboration avec Eatababy">
+        <img src="/public/assets/img/promo-burger.png" alt="promo burger Eatababy">
         <p>Chez Eatababy, nous aimons surprendre vos papilles… mais aussi votre porte-monnaie. 
             <br> Pendant une durée limitée, profitez de notre offre spéciale sur le Menu Baby Burger : pour le prix d’un menu moyen, repartez avec un burger gourmand accompagné d’une grande frite croustillante et d’une grande boisson rafraîchissante.
         <br> <br> C’est l’occasion rêvée de découvrir ou redécouvrir l’un de nos plats phares, auour de notre bébé Américain . Le pain moelleux, les ingrédients de qualité issus de producteurs locaux et la touche ludique qui fait notre identité rendent ce burger unique en son genre.
