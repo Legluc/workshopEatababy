@@ -2,11 +2,11 @@
 @use '../variables' as *;
 
 footer{
-    height: 100%;
+    height: 95%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: $space100;
+    padding: $space100 $space200;
 }
 
 .footer-left, .footer-center, .footer-right, .footer-info{
@@ -18,7 +18,7 @@ footer{
 }
 
 .footer-left img{
-    width: 150px;
+    width: 250px;
 }
 
 .footer-right, .footer-center, .footer-info{
@@ -33,8 +33,12 @@ footer{
     text-align: start;
 }
 
+.footer-right{
+    position: relative;
+}
+
 .footer-right img{
-    width: 150px;
+    width: 80%;
 }
 
 .footer-reseau{
@@ -43,5 +47,17 @@ footer{
 }
 
 .footer-reseau svg{
-    width: 50px;
+    width: 80px;
+}
+
+.footer-reseau .logo-linkedin{
+    width: 120px;
+}
+
+#noeud-footer{
+    width: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    rotate: (15deg);
 }
