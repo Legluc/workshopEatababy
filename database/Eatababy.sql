@@ -1,4 +1,6 @@
-﻿DROP DATABASE IF EXISTS Eatababy;
+﻿
+DROP DATABASE IF EXISTS Eatababy;
+
 CREATE DATABASE Eatababy;
 use Eatababy;
 
@@ -16,7 +18,7 @@ CREATE TABLE reservation (
 CREATE TABLE tables_restaurant (
     id_table INT AUTO_INCREMENT PRIMARY KEY,
     numero_table INT UNIQUE NOT NULL,
-    statut ENUM('libre', 'occupée', 'réservée') DEFAULT 'libre',
+    statut ENUM('libre', 'réservée') DEFAULT 'libre',
     id_reservation INT,
     FOREIGN KEY (id_reservation) REFERENCES reservation(id_reservation)
 );

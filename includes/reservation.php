@@ -61,12 +61,13 @@ function ajouterReservation($bdd) {
         $nombre_personnes = (int) $_POST['nombre_personnes'];
 
         try {
+            $bdd->beginTransaction();
             
+            // Insertion de la réservation
             $sql = "INSERT INTO reservation (nom_client, date_reservation, heure, telephone, nombre_personnes) 
                     VALUES (:nom_client, :date_reservation, :heure, :telephone, :nombre_personnes)";
 
             $stmt = $bdd->prepare($sql);
-
             
             $stmt->execute([
                 ':nom_client'       => $nom_client,
@@ -75,16 +76,42 @@ function ajouterReservation($bdd) {
                 ':telephone'        => $telephone,
                 ':nombre_personnes' => $nombre_personnes
             ]);
-
-            echo "<div class='message-success'>Réservation enregistrée avec succès !</div>";
+            
+            // Récupération de l'ID de la réservation qui vient d'être créée
+            $id_reservation = $bdd->lastInsertId();
+            
+            // Recherche d'une table libre
+            $sql_table = "SELECT id_table FROM tables_restaurant WHERE statut = 'libre' LIMIT 1";
+            $stmt_table = $bdd->query($sql_table);
+            
+            if ($table = $stmt_table->fetch(PDO::FETCH_ASSOC)) {
+                // Mise à jour du statut de la table
+                $sql_update = "UPDATE tables_restaurant SET statut = 'réservée', id_reservation = :id_reservation 
+                              WHERE id_table = :id_table";
+                $stmt_update = $bdd->prepare($sql_update);
+                $stmt_update->execute([
+                    ':id_reservation' => $id_reservation,
+                    ':id_table' => $table['id_table']
+                ]);
+                
+                $bdd->commit();
+                echo "<div class='message-success'>Réservation enregistrée avec succès ! Table assignée.</div>";
+            } else {
+                $bdd->rollBack();
+                echo "<div class='message-error'>Désolé, aucune table n'est disponible pour cette réservation.</div>";
+            }
+            
         } catch (PDOException $e) {
-            echo "Erreur : " . $e->getMessage();
+            if ($bdd->inTransaction()) {
+                $bdd->rollBack();
+            }
+            echo "<div class='message-error'>Erreur : " . $e->getMessage() . "</div>";
         }
     }
 }
 // Connexion à la base de données
 try {
-    $bdd = new PDO("mysql:host=localhost;dbname=schema;charset=utf8", "root", "");
+    $bdd = new PDO("mysql:host=localhost;dbname=Eatababy;charset=utf8", "root", "");
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     ajouterReservation($bdd);
