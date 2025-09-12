@@ -122,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams();
     if (selectedBebe) params.set('bebe', selectedBebe);
     if (selectedIngredient) params.set('ingredient', selectedIngredient);
+      console.log("test");
 
     if (![...params.keys()].length) {
       preview.innerHTML = '<p>Choisissez un bébé et/ou un accompagnement.</p>';

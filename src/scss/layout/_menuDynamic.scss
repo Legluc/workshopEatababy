@@ -32,7 +32,7 @@
 
 .menu-choix{
     flex-direction: column;
-    width: auto;
+    width: 50%;
     gap: $space60;
     padding: $space60;
 }
@@ -103,4 +103,19 @@ input{
     color: $dark;
     padding: $space20;
     border-radius: $radius20;
+    margin-bottom: $space20;
+    width: 30%;
+}
+
+.menu-realisation{
+    position: relative;
+    height: 956px;
+}
+
+.menu-realisation .preview-bebe{
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+    top: 0;
+    transform: translate(3%, 50%);
 }

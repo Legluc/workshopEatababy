@@ -345,7 +345,7 @@ body {
 
 .menu-choix {
   flex-direction: column;
-  width: auto;
+  width: 50%;
   gap: 60px;
   padding: 60px;
 }
@@ -418,6 +418,21 @@ input {
   color: #140004;
   padding: 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.menu-realisation {
+  position: relative;
+  height: 956px;
+}
+
+.menu-realisation .preview-bebe {
+  position: absolute;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  transform: translate(3%, 50%);
 }
 
 .container {
