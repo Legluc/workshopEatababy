@@ -366,7 +366,6 @@ body {
 }
 
 .menu-bebe-choix, .menu-accompagnement-choix {
-  display: none;
   display: flex;
   justify-content: center;
   align-items: center;
