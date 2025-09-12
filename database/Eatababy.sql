@@ -30,13 +30,21 @@ CREATE TABLE ingredients (
     image_ingredients VARCHAR(255) NOT NULL
 );
 
--- Table des plats personnalisés (un plat correspond à une commande)
+-- Table des types de bébés
 CREATE TABLE bebe (
     id_bebe INT AUTO_INCREMENT PRIMARY KEY,
-    id_table INT NOT NULL,
     nom_bebe VARCHAR(50) NOT NULL,
-    image_bebe VARCHAR(255) NOT NULL,
-    FOREIGN KEY (id_table) REFERENCES tables_restaurant(id_table)
+    image_bebe VARCHAR(255) NOT NULL
+);
+
+-- Table des commandes de bébés
+CREATE TABLE commande_bebe (
+    id_commande_bebe INT AUTO_INCREMENT PRIMARY KEY,
+    id_table INT NOT NULL,
+    id_bebe INT NOT NULL,
+    date_commande TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_table) REFERENCES tables_restaurant(id_table),
+    FOREIGN KEY (id_bebe) REFERENCES bebe(id_bebe)
 );
 
 -- Table intermédiaire pour lier les plats aux ingrédients choisis
