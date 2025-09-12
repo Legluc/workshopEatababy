@@ -6,7 +6,10 @@ header('Content-Type: application/json; charset=utf-8');
 
 require_once __DIR__ . '/../../includes/db.php'; // doit définir $pdo (PDO)
 
-function getImagePath(PDO $pdo, string $table, string $nameColumn, string $imgColumn, string $name): ?string {
+
+
+function getImagePath(PDO $pdo, string $table, string $nameColumn, string $imgColumn, string $name): ?string
+{
     $sql = "SELECT {$imgColumn} AS img FROM {$table} WHERE {$nameColumn} = :name LIMIT 1";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([':name' => $name]);
@@ -23,6 +26,8 @@ $response = ['ok' => true, 'errors' => [], 'data' => []];
 
 // On ne rend que ce qui est demandé
 if ($bebe !== '') {
+
+    $pdo = dbconnect();
     $imgBebe = getImagePath($pdo, 'bebe', 'nom_bebe', 'image_bebe', $bebe);
     if ($imgBebe) {
         $response['data']['bebe'] = $imgBebe;

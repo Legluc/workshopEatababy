@@ -3,6 +3,8 @@ require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.ph
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
 
+
+
 // Message d'aide pour le déboggage
 if (isset($db_error)) {
     echo '<div style="background-color: #ffebee; border: 1px solid #f44336; color: #b71c1c; padding: 15px; margin: 15px 0; border-radius: 5px;">
@@ -43,12 +45,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id_bebe = intval($_POST['id_bebe']);
         $id_ingredient = intval($_POST['id_ingredient']);
         $id_table = intval($_POST['id_table']);
-        
+
         // Pour le test, utilisons la table n°1
         if ($id_table === 0) {
             $id_table = 1;
         }
-        
+
         $result = saveBebe($id_table, $id_bebe, [$id_ingredient]);
         if ($result) {
             echo '<div class="success-message">Commande enregistrée avec succès !</div>';
@@ -75,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p>Les accompagnements</p>
                 </div>
             </div>
-            <div  class="menu-bebe-choix">
+            <div class="menu-bebe-choix">
 
                 <div id="bebe-blanc" class="bebe-choix">
                     <img src="/public/assets/img/tete-bebe-blanc.png" alt="bébé caucasien">
@@ -84,24 +86,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <img src="/public/assets/img/tete-bebe-japonaise.png" alt="bébé japonaise">
                 </div>
                 <div id="bebe-italienne" class="bebe-choix">
-                    <img  src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
+                    <img src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
                 </div>
                 <div id="bebe-mexicain" class="bebe-choix">
-                    <img  src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
+                    <img src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
                 </div>
                 <div id="bebe-antillaise" class="bebe-choix">
-                    <img src="/public/assets/img/tete-bebe-italienne.png" alt="bébé antillaise">
+                    <img src="/public/assets/img/tete-bebe-antillaise.png" alt="bébé antillaise">
                 </div>
                 <div id="bebe-bresilien" class="bebe-choix">
-                    <img src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé brésilien">
-                </div>                  
+                    <img src="/public/assets/img/tete-bebe-bresilien.png" alt="bébé brésilien">
+                </div>
             </div>
             <div class="menu-accompagnement-choix">
                 <div id="bourguignon" class="accompagnement-choix" data-id="3">
                     <img src="/public/assets/img/bourguignon.png" alt="bourguignon">
                 </div>
 
-                <div id="risotto" class="accompagnement-choix" data-id="4">
+                <div id="rissotto" class="accompagnement-choix" data-id="4">
                     <img src="/public/assets/img/rissotto.png" alt="risotto">
                 </div>
 
@@ -125,7 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <img src="/public/assets/img/salade.png" alt="salade">
                 </div>
 
-                <div id="pates" class="accompagnement-choix" data-id="2">
+                <div id="pate" class="accompagnement-choix" data-id="2">
                     <img src="/public/assets/img/pate.png" alt="pates">
                 </div>
             </div>
@@ -137,12 +139,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
         </div>
         <div class="menu-realisation">
+
         </div>
     </div>
 </section>
 
-<?php 
-    require_once __DIR__ . '/../includes/menu.php';
-    require_once __DIR__ . '/../includes/footer.php'; 
+<?php
+require_once __DIR__ . '/../includes/menu.php';
+require_once __DIR__ . '/../includes/footer.php';
 ?>
 <script src="/public/assets/js/menuDynamic-new.js"></script>
