@@ -1,4 +1,5 @@
-﻿
+﻿-- Active: 1716801476809@@127.0.0.1@3306
+
 DROP DATABASE IF EXISTS Eatababy;
 
 CREATE DATABASE Eatababy;

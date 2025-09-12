@@ -97,3 +97,80 @@ document.addEventListener("DOMContentLoaded", function () {
     form.submit();
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const bebeCards = document.querySelectorAll('.menu-bebe-choix .bebe-choix');
+  const ingCards  = document.querySelectorAll('.menu-accompagnement-choix .accompagnement-choix');
+  const preview   = document.querySelector('.menu-realisation');
+
+  let selectedBebe = '';
+  let selectedIngredient = '';
+
+  // Utilitaire : récupère l'id de la vignette cliquée et le convertit en slug cohérent
+  const idToSlug = (el) => (el?.id || '').trim();
+
+  // Visuel de sélection (optionnel)
+  const selectOne = (nodeList, clicked) => {
+    nodeList.forEach(n => n.classList.remove('is-selected'));
+    if (clicked) clicked.classList.add('is-selected');
+  };
+
+  const renderPreview = async () => {
+    // Construit l’URL de l’API en fonction de ce qui est sélectionné
+    const params = new URLSearchParams();
+    if (selectedBebe) params.set('bebe', selectedBebe);
+    if (selectedIngredient) params.set('ingredient', selectedIngredient);
+
+    if (![...params.keys()].length) {
+      preview.innerHTML = '<p>Choisissez un bébé et/ou un accompagnement.</p>';
+      return;
+    }
+
+    try {
+      const res = await fetch(`/public/api/menu_preview.php?${params.toString()}`, { headers: { 'Accept': 'application/json' } });
+      const json = await res.json();
+
+      // Construit le HTML d’aperçu en fonction des données reçues
+      const parts = [];
+      if (json.data?.bebe) {
+        parts.push(`<div class="preview-bebe"><img src="${json.data.bebe}" alt="bebe sélectionné"></div>`);
+      }
+      if (json.data?.ingredient) {
+        parts.push(`<div class="preview-ingredient"><img src="${json.data.ingredient}" alt="accompagnement sélectionné"></div>`);
+      }
+
+      if (parts.length) {
+        preview.innerHTML = parts.join('');
+      } else {
+        preview.innerHTML = `<p>${(json.errors && json.errors.join(' - ')) || 'Rien à afficher.'}</p>`;
+      }
+    } catch (e) {
+      console.error(e);
+      preview.innerHTML = '<p>Erreur lors du chargement des images.</p>';
+    }
+  };
+
+  // Listeners: BÉBÉS
+  bebeCards.forEach(card => {
+    card.addEventListener('click', () => {
+      selectedBebe = idToSlug(card);         // ex: "bebe-japonaise"
+      selectOne(bebeCards, card);
+      renderPreview();
+    });
+  });
+
+  // Listeners: ACCOMPAGNEMENTS
+  ingCards.forEach(card => {
+    card.addEventListener('click', () => {
+      selectedIngredient = idToSlug(card);   // ex: "farofa"
+      selectOne(ingCards, card);
+      renderPreview();
+    });
+  });
+
+  // Message par défaut
+  preview.innerHTML = '<p>Choisissez un bébé et/ou un accompagnement.</p>';
+});
+
