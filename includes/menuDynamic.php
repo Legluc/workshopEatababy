@@ -3,6 +3,30 @@ require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.ph
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
 
+// Récupération des données depuis la base de données
+$bebes = getAllBebes();
+$ingredients = getAllIngredients();
+
+// Traitement de la soumission du formulaire
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['id_bebe']) && isset($_POST['id_ingredient']) && isset($_POST['id_table'])) {
+        $id_bebe = intval($_POST['id_bebe']);
+        $id_ingredient = intval($_POST['id_ingredient']);
+        $id_table = intval($_POST['id_table']);
+        
+        // Pour le test, utilisons la table n°1
+        if ($id_table === 0) {
+            $id_table = 1;
+        }
+        
+        $result = saveBebe($id_table, $id_bebe, [$id_ingredient]);
+        if ($result) {
+            echo '<div class="success-message">Commande enregistrée avec succès !</div>';
+        } else {
+            echo '<div class="error-message">Erreur lors de l\'enregistrement de la commande.</div>';
+        }
+    }
+}
 ?>
 <section class="section-menu-dynamic">
     <div>
@@ -80,7 +104,11 @@ require_once __DIR__ . '/../includes/header.php';
             <button class="menu-validation">valider la commande</button>
         </div>
         <div class="menu-realisation">
-
+            <form id="commande-form" method="POST" action="" style="display: none;">
+                <input type="hidden" name="id_bebe" id="id_bebe" value="">
+                <input type="hidden" name="id_ingredient" id="id_ingredient" value="">
+                <input type="hidden" name="id_table" id="id_table" value="1">
+            </form>
         </div>
     </div>
 </section>
@@ -89,3 +117,4 @@ require_once __DIR__ . '/../includes/header.php';
     require_once __DIR__ . '/../includes/menu.php';
     require_once __DIR__ . '/../includes/footer.php'; 
 ?>
+<script src="/public/assets/js/menuDynamic-new.js"></script>

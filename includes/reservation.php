@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../config.php';   // fais une copie de config.sample.php -> config.php
 require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../includes/db.php';
 ?>
 
     <div class="container">
@@ -51,6 +52,7 @@ require_once __DIR__ . '/../includes/header.php';
 require_once __DIR__ . '/../includes/footer.php';
 
 
+
 function ajouterReservation($bdd) {
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -68,7 +70,6 @@ function ajouterReservation($bdd) {
                     VALUES (:nom_client, :date_reservation, :heure, :telephone, :nombre_personnes)";
 
             $stmt = $bdd->prepare($sql);
-            
             $stmt->execute([
                 ':nom_client'       => $nom_client,
                 ':date_reservation' => $date_reservation,
@@ -109,14 +110,6 @@ function ajouterReservation($bdd) {
         }
     }
 }
-// Connexion à la base de données
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=Eatababy;charset=utf8", "root", "");
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    ajouterReservation($bdd);
-} catch (PDOException $e) {
-    die("Connexion échouée : " . $e->getMessage());
-}
 ?>
 
