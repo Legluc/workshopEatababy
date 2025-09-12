@@ -96,3 +96,11 @@
 .choix-actif{
     background-color: $green;
 }
+
+input{
+    border: unset;
+    background-color: $lavender;
+    color: $dark;
+    padding: $space20;
+    border-radius: $radius20;
+}

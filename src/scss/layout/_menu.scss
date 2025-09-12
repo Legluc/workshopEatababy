@@ -4,23 +4,21 @@
 .menu-titre {
   font-size: 2rem;
   margin-bottom: 1rem;
-  margin-top: 265px;
   text-align: center;
 
 }
 .menu-container {
   background-color: $creme; 
-  font-family: 'Comic Sans MS', cursive, sans-serif;
   display: flex;
   justify-content: center; 
-  padding: 40px 0;
+  padding: $space40 0;
 }
 
 .item-img {
     width: 160px; /* taille de l'image */
     height: 160px;
     object-fit: cover; /* garde les proportions */
-    border-radius: 20px; /* optionnel, coins arrondis */
+    border-radius: $radius20; /* optionnel, coins arrondis */
 }
 
 .menu-box {
@@ -30,7 +28,7 @@
   width: 100%;             
   padding: 20px 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  box-shadow: 3px 4px 4px 4px rgba(20,0,4,0.2);
 }
 
 .item {
@@ -71,11 +69,11 @@
     margin-top: 0.5em;
 }
 .item-boisson {
-     display: grid;
+  display: grid;
   grid-template-columns: 1fr 80px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 #noeud-menu {
