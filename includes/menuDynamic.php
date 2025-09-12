@@ -76,23 +76,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
             <div  class="menu-bebe-choix">
-                <div id="tete-bebe-blanc" class="bebe-choix" data-id="1">
+
+                <div id="bebe-blanc" class="bebe-choix">
                     <img src="/public/assets/img/tete-bebe-blanc.png" alt="bébé caucasien">
                 </div>
-                <div id="tete-bebe-japonaise" class="bebe-choix" data-id="2">
+                <div id="bebe-japonaise" class="bebe-choix">
                     <img src="/public/assets/img/tete-bebe-japonaise.png" alt="bébé japonaise">
                 </div>
-                <div id="tete-bebe-italienne" class="bebe-choix" data-id="3">
+                <div id="bebe-italienne" class="bebe-choix">
                     <img  src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
                 </div>
-                <div id="tete-bebe-mexicain" class="bebe-choix" data-id="4">
+                <div id="bebe-mexicain" class="bebe-choix">
                     <img  src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
                 </div>
-                <div id="tete-bebe-antillaise" class="bebe-choix" data-id="5">
-                    <img src="/public/assets/img/tete-bebe-antillaise.png" alt="bébé antillaise">
+                <div id="bebe-antillaise" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-italienne.png" alt="bébé antillaise">
                 </div>
-                <div id="tete-bebe-bresilien" class="bebe-choix" data-id="6">
-                    <img src="/public/assets/img/tete-bebe-bresilien.png" alt="bébé brésilien">
+                <div id="bebe-bresilien" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé brésilien">
                 </div>                  
             </div>
             <div class="menu-accompagnement-choix">

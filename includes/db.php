@@ -20,6 +20,7 @@ function dbconnect()
     return $pdo;
 }
 
+
 /**
  * Récupère tous les bébés disponibles depuis la base de données
  * @return array Liste des bébés
