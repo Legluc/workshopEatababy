@@ -45,20 +45,62 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <p>Les accompagnements</p>
                 </div>
             </div>
-            <div class="menu-bebe-choix">
-                <?php foreach ($bebes as $bebe): ?>
-                <div id="tete-<?= $bebe['nom_bebe'] ?>" class="bebe-choix" data-id="<?= $bebe['id_bebe'] ?>">
-                    <img src="<?= $bebe['image_bebe'] ?>" alt="<?= $bebe['nom_bebe'] ?>">
+            <div  class="menu-bebe-choix">
+                <div id="tete-bebe-blanc" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-blanc.png" alt="bébé caucasien">
                 </div>
-                <?php endforeach; ?>
+                <div id="tete-bebe-japonaise" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-japonaise.png" alt="bébé japonaise">
+                </div>
+                <div id="tete-bebe-italienne" class="bebe-choix">
+                    <img  src="/public/assets/img/tete-bebe-italienne.png" alt="bébé italienne">
+                </div>
+                <div id="tete-bebe-mexicain" class="bebe-choix">
+                    <img  src="/public/assets/img/tete-bebe-mexicain.png" alt="bébé mexicain">
+                </div>
+                <div id="tete-bebe-antillaise" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-antillaise.png" alt="bébé antillaise">
+                </div>
+                <div id="tete-bebe-bresilien" class="bebe-choix">
+                    <img src="/public/assets/img/tete-bebe-bresilien.png" alt="bébé brésilien">
+                </div>                  
             </div>
             <div class="menu-accompagnement-choix">
-                <?php foreach ($ingredients as $ingredient): ?>
-                <div id="<?= $ingredient['nom_ingredient'] ?>" class="accompagnement-choix" data-id="<?= $ingredient['id_ingredient'] ?>">
-                    <img src="<?= $ingredient['image_ingredients'] ?>" alt="<?= $ingredient['nom_ingredient'] ?>">
+                <div id="bourguignon" class="accompagnement-choix">
+                    <img src="/public/assets/img/bourguignon.png" alt="bourguignon">
                 </div>
-                <?php endforeach; ?>
+
+                <div id="risotto" class="accompagnement-choix">
+                    <img src="/public/assets/img/rissotto.png" alt="risotto">
+                </div>
+
+                <div id="farofa" class="accompagnement-choix">
+                    <img src="/public/assets/img/farofa.png" alt="farofa">
+                </div>
+
+                <div id="riz" class="accompagnement-choix">
+                    <img src="/public/assets/img/riz.png" alt="riz">
+                </div>
+
+                <div id="chili" class="accompagnement-choix">
+                    <img src="/public/assets/img/chili.png" alt="chili">
+                </div>
+
+                <div id="legume" class="accompagnement-choix">
+                    <img src="/public/assets/img/legume.png" alt="legume">
+                </div>
+
+                <div id="salade" class="accompagnement-choix">
+                    <img src="/public/assets/img/salade.png" alt="salade">
+                </div>
+
+                <div id="pates" class="accompagnement-choix">
+                    <img src="/public/assets/img/pate.png" alt="pates">
+                </div>
             </div>
+            <form action="POST">
+                <input type="number" placeholder="Numéro de table" min="1" max="15" required>
+            </form>
             <button class="menu-validation">valider la commande</button>
         </div>
         <div class="menu-realisation">
