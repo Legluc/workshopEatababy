@@ -88,7 +88,7 @@ require_once __DIR__ . '/../includes/header.php';
 
                 <div class="item-text">
                     <h4 class="menu-item">CSC</h4>
-                    <p>viande de bébé en tartare, filets de saumon, caviarSS</p>
+                    <p>viande de bébé en tartare, filets de saumon, caviars</p>
                 </div>
                 <div class="item-price">24 €</div>
             </div>
