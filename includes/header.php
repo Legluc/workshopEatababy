@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mon projet GSAP + PHP</title>
+  <title>Eatababy</title>
   <link rel="stylesheet" href="/public/assets/css/style.css">
 
 </head>
