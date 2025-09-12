@@ -85,6 +85,14 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Mettre à jour les valeurs du formulaire avec les sélections
+    inputBebe.value = bebeSelectionne.dataset.id;
+    inputIngredient.value = ingredientSelectionne.dataset.id;
+
+    console.log("Bébé sélectionné:", inputBebe.value);
+    console.log("Ingrédient sélectionné:", inputIngredient.value);
+    console.log("Table:", document.getElementById("id_table").value);
+
     // Soumettre le formulaire
     form.submit();
   });
