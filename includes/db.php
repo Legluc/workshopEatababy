@@ -1,14 +1,8 @@
 ﻿<?php
+require_once __DIR__ . '/../config.php';
 
-// Connexion à la base de données
-try {
-    $bdd = new PDO("mysql:host=localhost;dbname=Eatababy;charset=utf8", "root", "");
-    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    ajouterReservation($bdd);
-} catch (PDOException $e) {
-    die("Connexion échouée : " . $e->getMessage());
-}
+
 
 /**
  * Récupère tous les bébés disponibles depuis la base de données
